@@ -114,198 +114,198 @@ entity.isPet()
 ```
 ### Funções e métodos da entidade Player
 ```javascript
-	//Teleporta usuário para as coordenadas
-	player.teleport(x,y,z)
-	//Teleporta para o furni
-	player.teleportToFurni(furni)
-	//Anda até as coordenadas
-	player.walk(x,y)
-	//Anda até o furni
-	player.walkToFurni(furni)
-	// Kicka o usuário do quarto
-	player.kick()
-	//Envia o usuário para o quarto selecionado
-	player.gotoRoom(roomId)
-	//Faz o usuário falar no quarto
-	player.say(message)
-	//Faz o usuário falar no quarto, caso shout (true) grita
-	player.say(message, shout)
-	//Faz o usuário falar com determinada bolha
-	player.say(message, shout, bubbleId)
-	//Envia um sussuro para o usuário 
-	player.message(message)
-	//Envia uma notifiação para o usuário
-	player.notification(icon, message)
-	//Da emblema ao usuário
-	player.giveBadge(badge)
-	//Remove o emblema ao usuário
-	player.removeBadge(badge)
-	//Remove o handitem do usuário
-	player.removeHandItem()
-	//Retorna true caso o usuário esteja no furni
-	player.inFurni(furni)
-	//Seta efeito no usuário
-	player.setEffect(effectId)
-	//Seta handitem no usuário
-	player.setHandItem(handItemId)
-	//Seta dança no usuário
-	player.setDance(danceId /*(0..4)*/)
-	// true  para poder andar false para parar.
-	player.setCanWalk(bool)
-	//Seta visual
-	player.setFigure(figure)
-	//Retorna true caso o usuário possua um rank >= ao escolhido.
-	player.hasRank(rank)
-	player.getFigure()
-	//Retorna missão do usuário.
-	player.getMotto()
-	//Retorna dança atual (0 para parado).
-	player.getDance()
-	//Pega o efeito atual do usuário (0 para nenhum )
-	player.getEffect()
-	//Pega o handitem atual do usuário
-	player.getHandItem()
-	//Retorna true caso o usuário possa andar pelo quarto
-	player.canWalk()
-	//Retorna o nome de usuário
-	player.getUsername()
-	//Retorna o ID do usuário
-	player.getId()
-	//Coordenas basicas
-	player.getX()
-	player.getY()
-	player.getZ()
-	//Retorna a rotação do usuário
-	player.getR()
+//Teleporta usuário para as coordenadas
+player.teleport(x,y,z)
+//Teleporta para o furni
+player.teleportToFurni(furni)
+//Anda até as coordenadas
+player.walk(x,y)
+//Anda até o furni
+player.walkToFurni(furni)
+// Kicka o usuário do quarto
+player.kick()
+//Envia o usuário para o quarto selecionado
+player.gotoRoom(roomId)
+//Faz o usuário falar no quarto
+player.say(message)
+//Faz o usuário falar no quarto, caso shout (true) grita
+player.say(message, shout)
+//Faz o usuário falar com determinada bolha
+player.say(message, shout, bubbleId)
+//Envia um sussuro para o usuário 
+player.message(message)
+//Envia uma notifiação para o usuário
+player.notification(icon, message)
+//Da emblema ao usuário
+player.giveBadge(badge)
+//Remove o emblema ao usuário
+player.removeBadge(badge)
+//Remove o handitem do usuário
+player.removeHandItem()
+//Retorna true caso o usuário esteja no furni
+player.inFurni(furni)
+//Seta efeito no usuário
+player.setEffect(effectId)
+//Seta handitem no usuário
+player.setHandItem(handItemId)
+//Seta dança no usuário
+player.setDance(danceId /*(0..4)*/)
+// true  para poder andar false para parar.
+player.setCanWalk(bool)
+//Seta visual
+player.setFigure(figure)
+//Retorna true caso o usuário possua um rank >= ao escolhido.
+player.hasRank(rank)
+player.getFigure()
+//Retorna missão do usuário.
+player.getMotto()
+//Retorna dança atual (0 para parado).
+player.getDance()
+//Pega o efeito atual do usuário (0 para nenhum )
+player.getEffect()
+//Pega o handitem atual do usuário
+player.getHandItem()
+//Retorna true caso o usuário possa andar pelo quarto
+player.canWalk()
+//Retorna o nome de usuário
+player.getUsername()
+//Retorna o ID do usuário
+player.getId()
+//Coordenas basicas
+player.getX()
+player.getY()
+player.getZ()
+//Retorna a rotação do usuário
+player.getR()
 	
 ```
 ### Funções e métodos da entidade BOT 
 ```javascript
-	//Teleporta usuário para as coordenadas
-	bot.teleport(x,y,z)
-	//Teleporta para o furni
-	bot.teleportToFurni(furni)
-	//Anda até as coordenadas
-	bot.walk(x,y)
-	//Anda até o furni
-	bot.walkToFurni(furni)
-	//Faz o bot falar no quarto
-	bot.say(message)
-	//Faz o bot falar no quarto, caso shout (true) grita
-	bot.say(message, shout)
-	//Faz o usuário falar com determinada bolha
-	bot.say(message, shout, bubbleId)
-	//Remove o handitem do usuário
-	bot.removeHandItem()
-	//Retorna true caso o bot esteja no furni
-	bot.inFurni(furni)
-	//Seta efeito no bot
-	bot.setEffect(effectId)
-	//Seta handitem no bot
-	bot.setHandItem(handItemId)
-	//Seta dança no bot
-	bot.setDance(danceId /*(0..4)*/)
-	// true  para poder andar false para parar.
-	bot.setCanWalk(bool)
-	//Seta visual
-	bot.setFigure(figure)
-	//Seta missão no bot
-	bot.setMotto(motto)
-	//Set username do bot
-	bot.setUsername(username);
-	//Retorna o figure d bot
-	bot.getFigure()
-	//Retorna missão do bot.
-	bot.getMotto()
-	//Retorna dança atual (0 para parado).
-	bot.getDance()
-	//Pega o efeito atual do bot(0 para nenhum )
-	bot.getEffect()
-	//Pega o handitem atual do bot
-	bot.getHandItem()
-	//Retorna true caso o usuário possa andar pelo quarto
-	bot.canWalk()
-	//Retorna o nome de usuário
-	bot.getUsername()
-	//Retorna o ID do usuário
-	bot.getId()
-	//Coordenas basicas
-	bot.getX()
-	bot.getY()
-	bot.getZ()
-	//Retorna a rotação do usuário
-	bot.getR()
+//Teleporta usuário para as coordenadas
+bot.teleport(x,y,z)
+//Teleporta para o furni
+bot.teleportToFurni(furni)
+//Anda até as coordenadas
+bot.walk(x,y)
+//Anda até o furni
+bot.walkToFurni(furni)
+//Faz o bot falar no quarto
+bot.say(message)
+//Faz o bot falar no quarto, caso shout (true) grita
+bot.say(message, shout)
+//Faz o usuário falar com determinada bolha
+bot.say(message, shout, bubbleId)
+//Remove o handitem do usuário
+bot.removeHandItem()
+//Retorna true caso o bot esteja no furni
+bot.inFurni(furni)
+//Seta efeito no bot
+bot.setEffect(effectId)
+//Seta handitem no bot
+bot.setHandItem(handItemId)
+//Seta dança no bot
+bot.setDance(danceId /*(0..4)*/)
+// true  para poder andar false para parar.
+bot.setCanWalk(bool)
+//Seta visual
+bot.setFigure(figure)
+//Seta missão no bot
+bot.setMotto(motto)
+//Set username do bot
+bot.setUsername(username);
+//Retorna o figure d bot
+bot.getFigure()
+//Retorna missão do bot.
+bot.getMotto()
+//Retorna dança atual (0 para parado).
+bot.getDance()
+//Pega o efeito atual do bot(0 para nenhum )
+bot.getEffect()
+//Pega o handitem atual do bot
+bot.getHandItem()
+//Retorna true caso o usuário possa andar pelo quarto
+bot.canWalk()
+//Retorna o nome de usuário
+bot.getUsername()
+//Retorna o ID do usuário
+bot.getId()
+//Coordenas basicas
+bot.getX()
+bot.getY()
+bot.getZ()
+//Retorna a rotação do usuário
+bot.getR()
 	
 ```
 ### Funções e métodos da entidade PET
 ```javascript
-	//Teleporta usuário para as coordenadas
-	pet.teleport(x,y,z)
-	//Teleporta para o furni
-	pet.teleportToFurni(furni)
-	//Anda até as coordenadas
-	pet.walk(x,y)
-	//Anda até o furni
-	pet.walkToFurni(furni)
-	//Remove o handitem do usuário
-	pet.removeHandItem()
-	//Retorna true caso o bot esteja no furni
-	pet.inFurni(furni)
-	// true  para poder andar false para parar.
-	pet.setCanWalk(bool)
-	//Retorna true caso o usuário possa andar pelo quarto
-	pet.canWalk()
-	//Retorna o nome de usuário
-	pet.getUsername()
-	//Retorna o ID do usuário
-	pet.getId()
-	//Coordenas basicas
-	pet.getX()
-	pet.getY()
-	pet.getZ()
-	//Retorna a rotação do usuário
-	pet.getR()
+//Teleporta usuário para as coordenadas
+pet.teleport(x,y,z)
+//Teleporta para o furni
+pet.teleportToFurni(furni)
+//Anda até as coordenadas
+pet.walk(x,y)
+//Anda até o furni
+pet.walkToFurni(furni)
+//Remove o handitem do usuário
+pet.removeHandItem()
+//Retorna true caso o bot esteja no furni
+pet.inFurni(furni)
+// true  para poder andar false para parar.
+pet.setCanWalk(bool)
+//Retorna true caso o usuário possa andar pelo quarto
+pet.canWalk()
+//Retorna o nome de usuário
+pet.getUsername()
+//Retorna o ID do usuário
+pet.getId()
+//Coordenas basicas
+pet.getX()
+pet.getY()
+pet.getZ()
+//Retorna a rotação do usuário
+pet.getR()
 	
 ```
 ## Entidade: ScriptFurni
 Entidade responsável por representar qualquer furni no quarto.
 ### Funções e métodos:
 ```javascript
-	//Move furni para a cordenanda
-	furni.move(x,y,z,rotation)
-	//Retorna uma array com todas as entidades em cima do mobi
-	furni.getEntities()
-	//Esconde o furni
-	furni.hide()
-	//Mostra o furni (caso ele tenha sido escondido)
-	furni.show()
-	//Retorna true se tiver 1 ou mais entidades no mobi
-	furni.hasEntities()
-	//Interage como o wired de estado
-	furni.toggleState()
-	//Seta o estado
-	furni.setState(state)
-	//Retorna o estado atual do mobi
-	furni.getState()	
-	//Retorna o ID do mobi
-	furni.getId()
-	//Coordenas basicas
-	furni.getX()
-	furni.getY()
-	furni.getZ()
+//Move furni para a cordenanda
+furni.move(x,y,z,rotation)
+//Retorna uma array com todas as entidades em cima do mobi
+furni.getEntities()
+//Esconde o furni
+furni.hide()
+//Mostra o furni (caso ele tenha sido escondido)
+furni.show()
+//Retorna true se tiver 1 ou mais entidades no mobi
+furni.hasEntities()
+//Interage como o wired de estado
+furni.toggleState()
+//Seta o estado
+furni.setState(state)
+//Retorna o estado atual do mobi
+furni.getState()	
+//Retorna o ID do mobi
+furni.getId()
+//Coordenas basicas
+furni.getX()
+furni.getY()
+furni.getZ()
 ```
 ## Entidade: FakeItem
 Entidade gerada pelo **Faker** onde representa uma um furni visual
 ### Funções e métodos:
 ```javascript
-	//Move furni para a cordenanda
-	furni.move(x,y,z,rotation)
-	//Seta o estado
-	furni.setState(state)
-	//Retorna o estado atual do mobi
-	furni.getState()	
-	//Retorna o ID do mobi
-	furni.getId()
+//Move furni para a cordenanda
+furni.move(x,y,z,rotation)
+//Seta o estado
+furni.setState(state)
+//Retorna o estado atual do mobi
+furni.getState()	
+//Retorna o ID do mobi
+furni.getId()
 ```
 ## Objetos de manipulação
 Esses objetos são injetados assim que o script é iniciado, e são responsáveis pela manipulação gera do quarto
