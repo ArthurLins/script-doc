@@ -144,6 +144,8 @@ player.removeBadge(badge)
 player.removeHandItem()
 //Retorna true caso o usuário esteja no furni
 player.inFurni(furni)
+//Retorna true caso o usuário esteja em um dos funis do array
+player.inAnyFurni(arrOfFurnis)
 //Seta efeito no usuário
 player.setEffect(effectId)
 //Seta handitem no usuário
@@ -167,6 +169,10 @@ player.getEffect()
 player.getHandItem()
 //Retorna true caso o usuário possa andar pelo quarto
 player.canWalk()
+//Calcula a distancia (em quadrados) entre as entidade 
+player.distanceTo(entity)
+//Verifica se a entidade está tocando em outra
+player.touching(entity)
 //Retorna o nome de usuário
 player.getUsername()
 //Retorna o ID do usuário
@@ -199,6 +205,8 @@ bot.say(message, shout, bubbleId)
 bot.removeHandItem()
 //Retorna true caso o bot esteja no furni
 bot.inFurni(furni)
+//Retorna true caso o bot esteja em um dos funis do array
+player.inAnyFurni(arrOfFurnis)
 //Seta efeito no bot
 bot.setEffect(effectId)
 //Seta handitem no bot
@@ -225,6 +233,10 @@ bot.getEffect()
 bot.getHandItem()
 //Retorna true caso o usuário possa andar pelo quarto
 bot.canWalk()
+//Calcula a distancia (em quadrados) entre as entidade 
+bot.distanceTo(entity)
+//Verifica se a entidade está tocando em outra
+bot.touching(entity)
 //Retorna o nome de usuário
 bot.getUsername()
 //Retorna o ID do usuário
@@ -249,12 +261,18 @@ pet.walk(x,y)
 pet.walkToFurni(furni)
 //Remove o handitem do usuário
 pet.removeHandItem()
-//Retorna true caso o bot esteja no furni
+//Retorna true caso o pet esteja no furni
 pet.inFurni(furni)
+//Retorna true caso o pet esteja em um dos funis do array
+player.inAnyFurni(arrOfFurnis)
 // true  para poder andar false para parar.
 pet.setCanWalk(bool)
 //Retorna true caso o usuário possa andar pelo quarto
 pet.canWalk()
+//Calcula a distancia (em quadrados) entre as entidade 
+pet.distanceTo(entity)
+//Verifica se a entidade está tocando em outra
+pet.touching(entity)
 //Retorna o nome de usuário
 pet.getUsername()
 //Retorna o ID do usuário
