@@ -391,11 +391,11 @@ O objeto **Commands** implementa as funções para facilitar a execução de com
 ```javascript
 
 //Executa apenas se a msg começar com :info
-Commands.register(":info", true, function(){
+Commands.register(":info", true, function(entity, text){
 	//Executa commando 
 })
 //Funciona como o ativador Usuáiro fala
-Commands.register("info", false, function(){
+Commands.register("info", false, function(entity, text){
 	//Executa commando 
 })
 ```
