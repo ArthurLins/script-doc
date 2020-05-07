@@ -177,6 +177,10 @@ player.touching(entity)
 player.getUsername()
 //Retorna o ID do usuário
 player.getId()
+//Vira para a entidade
+player.lookTo(x,y)
+//Vira para a entidade (move so a cabeça?)
+player.lookTo(x,y, bool)
 //Coordenas basicas
 player.getX()
 player.getY()
@@ -237,6 +241,10 @@ bot.canWalk()
 bot.distanceTo(entity)
 //Verifica se a entidade está tocando em outra
 bot.touching(entity)
+//Vira para a entidade
+player.lookTo(x,y)
+//Vira para a entidade (move so a cabeça?)
+player.lookTo(x,y, bool)
 //Retorna o nome de usuário
 bot.getUsername()
 //Retorna o ID do usuário
