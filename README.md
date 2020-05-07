@@ -4,6 +4,7 @@
  - **Comando :script**
  - ***Eventos Assíncronos*** 
  - ***Eventos Síncronos***
+ - ***Injects***
 
 **Entidades:**
  - ***ScriptEntity***
@@ -29,6 +30,8 @@ O Comando :script da acesso total a todos os controles relacionados a execução
     :script enable -> Habilita a execução de scripts no quarto;
     :script disable -> Desabilita a execução de scripts no quarto;
     :script log -> Exibe os logs de execução ;
+    :script i <nome do inject script> -> Cria/Edita inject script
+    :script ls -> Lista todos os inject scripts da sua conta.
     :script tool -> Habilita/desabilita a ferramenta de seleção de móbis.
 
 ## Eventos Assíncronos
